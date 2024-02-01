@@ -5,7 +5,7 @@
 - gasket4
 - gasket5
 
-Para explicar, copie trechos do código na forma de imagem (Windows+Shift+S) e cole em um documento do Word. Explique o trecho logo em seguida. Procure colocar desenhos na sua explicação.
+Para explicar, copie trechos do código na forma de imagem (Windows+Shift+S) e cole em um documento do Word Explique o trecho logo em seguida. -- ou pode usar comentários no código direto. Procure colocar desenhos na sua explicação.
 
 2) Crie um fractal com a seguinte regra:
 
