@@ -38,12 +38,12 @@ Crie um Menu para selecionar um dos Triângulos:
 
 Selecione um Triângulo
 
-Triangulo 1
+Triângulo 1
 
-Triangulo 2
+Triângulo 2
 
-Triangulo 3
+Triângulo 3
 
 
-Com esse interface, o usuário pode selecionar um dos triângulos e movê-lo para esquerda ou direita. Faça o movimento circular (se o triangulo estiver no canto esquerdo e for movido para esquerda, ele irá para a posição mais à direita)
+Com esse interface, o usuário pode selecionar um dos triângulos e movê-lo para esquerda ou direita. Faça o movimento circular (se o triângulo estiver no canto esquerdo e for movido para esquerda, ele irá para a posição mais à direita)
 
