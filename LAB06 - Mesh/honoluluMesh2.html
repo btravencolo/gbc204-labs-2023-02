@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+Resolution
+<button id = "Res64">64 x 64</button>
+<button id = "Res128">128 x 128</button>
+<button id = "Res256">256 x 256</button>
+
+<p></p>
+<button id = "Button3">Increase R</button>
+<button id = "Button4">Decrease R</button>
+
+<p> </p>
+<button id = "Button5">Increase theta</button>
+<button id = "Button6">Decrease theta</button>
+<button id = "Button7">Increase phi</button>
+<button id = "Button8">Decrease phi</button>
+
+<p> </p>
+<button id = "Button11">Higher</button>
+<button id = "Button12">Shorter</button>
+<p> </p>
+<script id="vertex-shader" type="x-shader/x-vertex">
+
+
+attribute  vec4 vPosition;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+
+uniform float scale;
+
+void main()
+{
+    gl_Position = vec4(vPosition.x, vPosition.y/scale, vPosition.z, 1.0);
+    gl_Position = projectionMatrix*modelViewMatrix*gl_Position;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+
+uniform vec4 fColor;
+
+void
+main()
+{
+    gl_FragColor = fColor;
+}
+</script>
+
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="honoluluMeshData.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="honoluluMesh2.js"></script>
+
+<body>
+<canvas id="gl-canvas" width="1024" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+</body>
+</html>
