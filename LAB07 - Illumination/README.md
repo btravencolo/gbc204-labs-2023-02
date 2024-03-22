@@ -1,3 +1,7 @@
+Analisar os diferentes códigos da pasta.
+
+Dicas para entender melhor:
+
 Chapter 6 Programs
 
 wireSphere: wire frame of recursively generated sphere
